@@ -1,0 +1,59 @@
+.App-banner{
+    width: 100%;
+    max-height: fit-content;
+    display: flex;
+    height: 11vh;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    background: rgb(231, 242, 255);
+    justify-content: flex-start;
+    box-shadow: 0 5px 2px -2px rgb(132, 232, 255);
+}
+.back-wrapper{
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.back-button{
+    padding: 1.5vh;
+    background-color: rgb(144, 222, 255);
+    color: rgb(24, 113, 254);
+    border-radius: 5px;
+    border: none;
+    width: 4vw;
+    min-width: fit-content;
+    height: auto;   
+    cursor: pointer;
+}
+.back-button:hover{
+    background-color:rgb(9, 105, 173);
+    color:rgb(190, 235, 255);
+    transition: 0.5s;
+}
+.logo-banner-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4rem;
+}
+.banner-logo{
+    width: 12vw;
+    min-width: 100px;
+    height: auto;
+}
+.vertical-line{
+    margin-left: 4rem;
+    border: solid 1px rgb(72, 72, 72);
+    height: 9.5vh;
+}
+.banner-title-wrapper{
+    display: flex;
+    flex-direction: row;
+    margin-left: 4rem;
+    font-size: 3.5vw;
+    height: auto;
+}

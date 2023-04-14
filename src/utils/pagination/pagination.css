@@ -1,0 +1,18 @@
+.pagination-button{
+    margin: 0 0.5vh;
+    background: #ffffff;
+	color: inherit;
+	border: solid 1px black;
+    border-radius: 5px;
+	padding: 5px 10px;
+	cursor: pointer;
+	outline: inherit;
+}
+.pagination-button-selected{
+	border: solid 2px rgb(0, 191, 255);
+	padding: 5px 10px;
+	cursor: pointer;
+	color: #ffffff;
+	border-radius: 5px;
+    background: rgb(0, 121, 186);
+}

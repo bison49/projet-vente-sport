@@ -1,0 +1,109 @@
+.profile-user-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: fit-content;
+}
+.profile-user-wrapper{
+    width: 100%;
+    top: 14vh;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    max-height: fit-content;
+    background: #ffffff;
+    align-items: center;
+}
+.menu-profile-user-wrapper{
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 4vh;
+}
+.menu-item-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3vh;
+    width: 60%;
+    height: fit-content;
+    padding: 3vh;
+    justify-content: space-between;
+}
+.content-menu-box{
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    min-width: 300px;
+    float: left;
+    min-height: fit-content;
+    height: 150px;
+    background: #ffffff;
+    border-radius: 5px;
+    border: solid 4px #01374e; 
+    justify-content: center;
+}
+.content-menu-box:hover{
+    background: #e2fbff;
+}
+.menu-content-link{
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+    width: 90%;
+    text-decoration: none;
+
+}
+.content-name-wrapper{
+    width: 100%;
+    display: flex;
+    color: rgb(0, 65, 102);
+    font-weight: bold;
+    font-size: 24px;
+    height: 60%;
+}
+.content-description-wrapper{
+    width: 100%;
+    display: flex;
+    height: 40%;
+    color: grey;
+    font-size: 12px;
+}
+.profil-item-wrapper{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3vh;
+}
+.user-profil-box{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    width: 90%;
+    height: 150px;
+    padding: 2vh;
+    -webkit-box-shadow: 0 0 5px 2px #a7a7a7;
+    -moz-box-shadow: 0 0 5px 2px #a7a7a7;
+    box-shadow: 0 0 5px 2px #a7a7a7;
+}
+.profil-username-wrapper{
+    font-size: 30px;
+    color:rgb(0, 65, 102);
+    font-weight: bolder;
+    display: flex;
+    height: 50%;
+}
+.profil-date-wrapper{
+    margin-top: 2px;
+    display: flex;
+    gap: 2vh;
+    flex-direction: column;
+    height: 50%;
+    align-content: center;
+    color: grey;
+    font-size: 14px;
+}
+    

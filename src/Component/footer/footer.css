@@ -1,0 +1,48 @@
+.App-footer{
+    background: rgb(61, 61, 61); 
+    position: relative;
+    bottom:0;
+    left: 0; 
+    right: 0;
+    color: #ffffff;    
+}
+.top-footer{
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+}
+.footer-h3{
+    text-decoration-line: underline;
+    font-size: 1.5vw;
+    font-weight: lighter;
+}
+.about-us{
+    width: 33%;
+    margin-left: 2vh;
+}
+.legal-information{
+    width: 33%;
+}
+.faq{
+    width: 33%;
+    margin-right: 2vh;
+}
+.copyright{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.vertical-line-footer{
+    margin-left: 2rem;
+    border: solid 1px #ffffff;
+    margin-bottom: 1vh;
+    height: 4vh;
+}
+.social-app-link{
+    margin-left: 2vw;
+    color: #ffffff;
+}

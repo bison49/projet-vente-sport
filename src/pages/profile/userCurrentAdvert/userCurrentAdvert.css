@@ -1,0 +1,153 @@
+@media only screen and (max-width: 850px) {
+    .my-advert-profil-wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .user-advert-wrapper{
+        width: 100%;
+        display: flex;
+        min-height: 72vh;
+        margin-top: 5vh;   
+        justify-content: center;
+        flex-direction: column;
+        max-height: fit-content;
+    }
+    .my-advert-box-articles{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-height: fit-content;
+        justify-content: center;
+    }
+    .seller-article-card{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        height: 200px;
+        margin-bottom: 2vh;
+        max-height: fit-content;
+        background: #ffffff;
+        border-radius: 5px;
+        border: solid 2px #01374e;    
+    }
+  }
+@media only screen and (min-width: 850px) {
+    .my-advert-profil-wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        align-items: center;
+    }
+    .my-advert-box-articles{
+        display: flex;
+        width: 100%;
+        padding: 0 0 0 5vh;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: fit-content;
+        justify-content: center;
+    }
+    .seller-article-card{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        height: 200px;
+        margin-bottom: 2vh;
+        max-height: fit-content;
+        background: #ffffff;
+        border-radius: 5px;
+        border: solid 2px #01374e;    
+    }
+    .user-advert-wrapper{
+        width: 100%;
+        display: flex;
+        min-height: 72vh;
+        margin-top: 5vh;   
+        justify-content: center;
+        flex-direction: row;
+        max-height: fit-content;
+    }
+}
+.user-advert-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-height: fit-content;
+}
+.user-advert-footer-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 72vh;
+    justify-content: center;
+    align-items: center;
+}
+.seller-advert-profil{
+    display: flex;
+    width: 100%;
+    font-size: 16px;
+    height: 20%;
+}
+.sorting-advert-profil{
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    background: #ededed;
+    width: 230px;
+    padding: 0.2vh;
+    margin-bottom: 2vh;
+}
+.sorting-advert-profil select {
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    padding: 1.5vh;
+}
+.profil-my-advert-card{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+}
+.button-advert-card{
+    width: 20%;
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+}
+.my-advert-button-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+.my-advert-update-button{
+    width: 90%;
+    border-radius: 5px;
+    height: 80px;
+    font-size: 2vh;
+    border:none;
+    color: #ffffff;
+    cursor: pointer;
+    background: rgb(33, 170, 255);
+}
+.my-advert-delete-button{
+    width: 90%;
+    height: 80px;
+    border-radius: 5px;
+    font-size: 2vh;
+    cursor: pointer;
+    background: rgb(255, 85, 85);
+    color: #ffffff;
+    border:none;
+}
+.my-advert-delete-button:active{
+    background: red;
+}
+.my-advert-update-button:active{
+    background: rgb(0, 102, 255);
+}

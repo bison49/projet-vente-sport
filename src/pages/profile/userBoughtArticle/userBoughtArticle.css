@@ -1,0 +1,108 @@
+@media only screen and (max-width: 850px) {
+    .seller-article-advert-wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .user-advert-wrapper{
+        width: 100%;
+        display: flex;
+        min-height: 72vh;
+        margin-top: 5vh;   
+        justify-content: center;
+        flex-direction: column;
+        max-height: fit-content;
+    }
+    .seller-box-articles{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-height: fit-content;
+        justify-content: center;
+    }
+    .seller-article-card{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 200px;
+        margin-bottom: 2vh;
+        max-height: fit-content;
+        background: #ffffff;
+        border-radius: 5px;
+        border: solid 2px #01374e;    
+    }
+  }
+@media only screen and (min-width: 850px) {
+    .seller-article-advert-wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+    }
+    .seller-box-articles{
+        display: flex;
+        width: 100%;
+        padding: 0 0 0 5vh;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: fit-content;
+        justify-content: center;
+    }
+    .seller-article-card{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 200px;
+        margin-bottom: 2vh;
+        max-height: fit-content;
+        background: #ffffff;
+        border-radius: 5px;
+        border: solid 2px #01374e;    
+    }
+    .user-advert-wrapper{
+        width: 100%;
+        display: flex;
+        min-height: 72vh;
+        margin-top: 5vh;   
+        justify-content: center;
+        flex-direction: row;
+        max-height: fit-content;
+    }
+}
+.user-advert-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-height: fit-content;
+}
+.user-advert-footer-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 72vh;
+    justify-content: center;
+    align-items: center;
+}
+.seller-advert-profil{
+    display: flex;
+    width: 100%;
+    font-size: 16px;
+    height: 20%;
+}
+.sorting-advert-profil{
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    background: #ededed;
+    width: 230px;
+    padding: 0.2vh;
+    margin-bottom: 2vh;
+}
+.sorting-advert-profil select {
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    padding: 1.5vh;
+}

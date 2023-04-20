@@ -10,7 +10,7 @@
     top: 0;
     background: rgb(231, 242, 255);
     justify-content: flex-start;
-    box-shadow: 0 5px 2px -2px rgb(132, 232, 255);
+    /*box-shadow: 0 5px 2px -2px rgb(132, 232, 255);*/
 }
 .back-wrapper{
     margin-left: 3rem;

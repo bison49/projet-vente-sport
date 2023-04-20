@@ -145,9 +145,9 @@
     color: #ffffff;
     border:none;
 }
-.my-advert-delete-button:active{
+.my-advert-delete-button:hover{
     background: red;
 }
-.my-advert-update-button:active{
+.my-advert-update-button:hover{
     background: rgb(0, 102, 255);
 }

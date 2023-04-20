@@ -21,6 +21,7 @@ function AddArticle() {
   const navigate = useNavigate();
   const { token } = useToken();
   const MAX_COUNT = 3;
+  const MAX_FILE_SIZE = 1024 * 1024 * 2;
   const { user } = useUser();
   const [images, setImages] = useState<any>([]);
   const [categories, setCategories] = useState<any[]>([]);
@@ -77,7 +78,11 @@ function AddArticle() {
     let limitExceded = false;
     files.some((file) => {
       if (uploaded.findIndex((f) => f.name === file.name) === -1) {
-        uploaded.push(file);
+        if (file.size > MAX_FILE_SIZE) {
+          errorMessages.images = 'La taille du fichier ne doit pas dépasser 2Mo';
+        } else {
+          uploaded.push(file);
+        }
         if (uploaded.length === MAX_COUNT) setIsFull(true);
         if (uploaded.length > MAX_COUNT) {
           errorMessages.images = 'Vous avez téléchargé le nombre maximum de fichiers';
@@ -236,7 +241,7 @@ function AddArticle() {
             >
               <FiUpload className="upload-icon" size={'20px'} />
               <span>
-                Déposer vos photos({fileNumber}/{MAX_COUNT}) *
+                Déposer vos photos(2Mo maximum) * {fileNumber}/{MAX_COUNT}
               </span>
             </label>
           </div>

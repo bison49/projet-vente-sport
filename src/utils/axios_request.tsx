@@ -39,6 +39,7 @@ export async function loginUser(
         })
         .then((res) => res.data)
         .then((data) => {
+          console.log(data);
           setUser(data);
           setToken(token);
           setIsValidate(true);

@@ -31,4 +31,10 @@ export const MenuContent: any[] = [
     description: 'Voir les annonces que vous avez sélectonné(e) en tant que favori',
     path: '/my-favorite',
   },
+  {
+    id: 6,
+    name: 'Site administrateur',
+    description: "Accès au site administrateur de l'application",
+    path: '/admin',
+  },
 ];

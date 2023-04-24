@@ -11,6 +11,11 @@ import { MenuContent } from '../../utils/menuProfilContent/MenuContent';
 /* eslint-disable react/no-unescaped-entities */
 function Profile() {
   const { user } = useUser();
+  const roles = user.role;
+  if (!roles.includes('ROLE_ADMIN')) {
+    const removeAdmin = MenuContent.map((item) => item.id).indexOf(6);
+    ~removeAdmin && MenuContent.splice(removeAdmin, 1);
+  }
   return (
     <div className="profile-user-container">
       <Header />
@@ -18,7 +23,12 @@ function Profile() {
         <div className="menu-profile-user-wrapper">
           <div className="menu-item-wrapper">
             {MenuContent.map((content, index) => (
-              <div key={index} className="content-menu-box">
+              <div
+                key={index}
+                className={
+                  content.id === 6 ? 'content-menu-box admin' : 'content-menu-box all'
+                }
+              >
                 <Link to={content.path} className="menu-content-link">
                   <div className="content-name-wrapper">
                     <span>{content.name}</span>

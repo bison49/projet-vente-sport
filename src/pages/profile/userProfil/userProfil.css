@@ -92,6 +92,7 @@
 .update-button{
     width: 90%;
     padding: 1.5vh;
+    cursor: pointer;
     border: none;
     border-radius: 5px;
     font-size: 2vh;

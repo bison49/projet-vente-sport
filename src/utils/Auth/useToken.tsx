@@ -22,7 +22,6 @@ export default function useToken() {
 }
 
 export function removeToken() {
-  console.log('je suis là');
   localStorage.removeItem('token');
   localStorage.removeItem('user');
 }

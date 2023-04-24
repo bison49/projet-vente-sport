@@ -42,7 +42,14 @@ function App() {
           <Route path="reset/password/code" element={<ResetPasswordCode />} />
           <Route path="reset/password/email" element={<SendMailResetPassword />} />
           <Route path="user-advert/:id" element={<UserAdvert />} />
-          <Route path="/admin" element={<Admin />} />
+          <Route
+            path="admin/*"
+            element={
+              <ProtectedRoute>
+                <Admin />
+              </ProtectedRoute>
+            }
+          />
           <Route path="register" element={<Register />} />
           <Route path="verification-email" element={<SendVerificationMail />} />
           <Route

@@ -42,11 +42,19 @@
     height: 150px;
     background: #ffffff;
     border-radius: 5px;
-    border: solid 4px #01374e; 
     justify-content: center;
 }
-.content-menu-box:hover{
+.content-menu-box.all{
+    border: solid 4px #01374e; 
+}
+.content-menu-box.admin{
+    border: solid 4px rgb(250, 58, 58);
+}
+.content-menu-box.all:hover{
     background: #e2fbff;
+}
+.content-menu-box.admin:hover{
+    background: rgb(255, 202, 202);
 }
 .menu-content-link{
     display: flex;
@@ -54,7 +62,6 @@
     padding: 2vh;
     width: 90%;
     text-decoration: none;
-
 }
 .content-name-wrapper{
     width: 100%;

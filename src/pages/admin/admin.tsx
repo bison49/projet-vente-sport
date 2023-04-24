@@ -118,7 +118,7 @@ const Admin = () => {
   const [redirectToProfil, setRedirectToProfil] = useState(false);
 
   useEffect(() => {
-    document.title = 'Api platform admin';
+    document.title = 'sposirte admin';
   }, []);
   return (
     <>

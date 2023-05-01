@@ -98,6 +98,7 @@ export async function registerUser(
     })
     .catch((error) => {
       const violations = error.response.data.violations;
+      console.log(error.response.data);
       if (violations.length > 0) {
         violations.forEach((violation: { propertyPath: string; message: string }) => {
           if (violation.propertyPath === 'email') {
@@ -294,7 +295,7 @@ export async function getArticles(
   setTotalPages: any,
   setPrices: { (value: SetStateAction<number[]>): void; (arg0: number[]): void },
 ) {
-  const ITEM_PER_PAGE = 20;
+  const ITEM_PER_PAGE = 10;
   await axios
     .get(`${API_URL}${page}`, {
       headers: { 'content-type': 'application/ld+json' },

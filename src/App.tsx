@@ -1,5 +1,8 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import './App.css';
 
+import jwt_decode from 'jwt-decode';
+import { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 import Admin from './pages/admin/admin';
@@ -24,11 +27,28 @@ import ResetPasswordCode from './pages/resetPassword/resetPasswordCode/ResetPass
 import SendMailResetPassword from './pages/resetPassword/sendMailResetPassword/SendMailResetPassword';
 import SendVerificationMail from './pages/sendMailActivation/SendVerificationMail';
 import AuthVerify from './utils/Auth/authVerify';
+import { logout } from './utils/Auth/logout';
 import useToken from './utils/Auth/useToken';
+import useUser from './utils/Auth/useUser';
 import ProtectedRoute from './utils/ProtectedRoute';
 
 function App() {
   const { setToken } = useToken();
+  const { token } = useToken();
+  const { user } = useUser();
+
+  async function disconnect(id: number) {
+    await logout(id);
+  }
+
+  useEffect(() => {
+    if (token) {
+      const decodedToken: any = jwt_decode(token);
+      if (decodedToken.exp * 1000 < Date.now()) {
+        disconnect(user.id);
+      }
+    }
+  }, []);
 
   return (
     <div>

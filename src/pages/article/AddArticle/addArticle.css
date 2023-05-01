@@ -2,7 +2,8 @@
     display: flex;
     width: 100%; 
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
+    height: fit-content; 
 }
 .add-article-wrapper{
     align-items: center;
@@ -10,7 +11,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 89vh;
+    min-height: 89vh;
     max-height: fit-content;
     top: 15vh;   
     background: url('../../../../resources/images/background/add_article.jpg') no-repeat center center fixed;

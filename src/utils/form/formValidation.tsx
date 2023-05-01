@@ -182,7 +182,7 @@ export function formArticleValidation(
       "La description de l'article ne doit pas comporter plus de 1000 caractères.";
     isValid = false;
   }
-  if (values.price === null || values.price < 0) {
+  if (values.price === null || values.price <= 0) {
     errorMessages.price = 'Vous devez indiquer un prix';
     isValid = false;
   } else if (!regexNumeric.test(values.price.toString())) {
